@@ -70,10 +70,10 @@ class GridContainer extends React.Component {
                             Forward
                         </button>
                     </GridToolbar>
-                    <Column field="ProductID" title="ID" editable={false}/>
+                    <Column field="ProductID" title="ID" editable={false} filter="numeric"/>
                     <Column field="ProductName" title="Name"/>
-                    <Column field="UnitPrice" title="Price" editor="numeric"/>
-                    <Column field="UnitsInStock" title="In stock" editor="numeric"/>
+                    <Column field="UnitPrice" title="Price" editor="numeric" filter="numeric"/>
+                    <Column field="UnitsInStock" title="In stock" editor="numeric" filter="numeric"/>
                     <Column cell={this.CommandCell}/>
                 </Grid>
             </div>
